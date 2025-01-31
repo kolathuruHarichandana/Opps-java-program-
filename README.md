@@ -51,6 +51,8 @@ class Main {
 }
 OUTPUT:
 3535 is a palindrome
+![image](https://github.com/user-attachments/assets/3ac80557-df6a-4aa1-879a-6ffd06b1d0ea)
+
 
 Example 3: Simple java Program to find Grade of Students 
 Code:
@@ -86,6 +88,9 @@ public class grade {
         scanner.close();
     }
 }
+OUTPUT:
+![image](https://github.com/user-attachments/assets/1ec19fe4-3b54-4ee0-a1c1-f63e1883e7ac)
+
 
 Example 4:A Simple Java Program to Convert Distance
 Code:
@@ -118,6 +123,8 @@ public class convert {
     }
 }
 OUTPUT:
+![image](https://github.com/user-attachments/assets/52162003-70d8-4773-ac43-1fcec4a57d3f)
+
 Example 5: A Simple Java Program to Provide electricity bill Based on their Power consumption
 Code: 
 import java.util.Scanner;
@@ -152,4 +159,6 @@ public class Bill {
     }
 }
 OUTPUT:
+![image](https://github.com/user-attachments/assets/92e2472c-d5dd-447b-bdfb-2bda12dc68c7)
+
 
