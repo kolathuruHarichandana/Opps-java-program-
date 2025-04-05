@@ -1,0 +1,63 @@
+class Product {
+    String name;
+    double price;
+
+    Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    void displayProduct() {
+        System.out.println("Product: " + name + ", Price: $" + price);
+    }
+}
+
+class Electronics extends Product {
+    Electronics(String name, double price) {
+        super(name, price);
+    }
+
+    void warranty() {
+        System.out.println("Electronics warranty: 1 year");
+    }
+}
+
+class Clothing extends Product {
+    Clothing(String name, double price) {
+        super(name, price);
+    }
+
+    void fabricInfo() {
+        System.out.println("Fabric: 100% cotton");
+    }
+}
+
+class Grocery extends Product {
+    Grocery(String name, double price) {
+        super(name, price);
+    }
+
+    void expiryDate() {
+        System.out.println("Check expiration date before use.");
+    }
+}
+
+public class hari {
+    public static void main(String[] args) {
+        Electronics laptop = new Electronics("Laptop", 950.00);
+        Clothing tshirt = new Clothing("T-Shirt", 19.99);
+        Grocery rice = new Grocery("Basmati Rice", 25.50);
+
+        System.out.println("--- Electronics ---");
+        laptop.displayProduct();
+        laptop.warranty();
+
+        System.out.println("\n--- Clothing ---");
+        tshirt.displayProduct();
+        tshirt.fabricInfo();
+
+        System.out.println("\n--- Grocery ---");
+        rice.displayProduct();
+        rice.expiryDate();
+    }
+}
