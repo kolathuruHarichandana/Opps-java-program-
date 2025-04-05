@@ -1,0 +1,32 @@
+class Platform {
+    String platformName = "LearnHub";
+    String website = "www.learnhub.com";
+    void displayPlatform() {
+        System.out.println("Platform Name: " + platformName);
+        System.out.println("Website: " + website);
+    }
+}
+class Course extends Platform {
+    String courseName = "Java Programming";
+    int durationWeeks = 4;
+    void displayCourse() {
+        System.out.println("Course: " + courseName);
+        System.out.println("Duration: " + durationWeeks + " weeks");
+    }
+}
+class Student extends Course {
+    String studentName = "Riya Mehta";
+    int studentID = 1023;
+    void displayStudent() {
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Student ID: " + studentID);
+    }
+}
+public class F {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.displayPlatform();
+        s.displayCourse();
+        s.displayStudent();
+    }
+}
