@@ -1,0 +1,35 @@
+class Employee {
+    String empName = "Amit Sharma";
+    int empID = 101;
+    void displayEmployee() {
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Employee ID: " + empID);
+    }
+}
+interface Workable {
+    void doWork();
+}
+interface Reportable {
+    void generateReport();
+}
+class Manager extends Employee implements Workable, Reportable {
+    String department = "Sales";
+    void displayManager() {
+        System.out.println("Department: " + department);
+    }
+    public void doWork() {
+        System.out.println("Managing the team and assigning tasks.");
+    }
+    public void generateReport() {
+        System.out.println("Generating weekly performance reports.");
+    }
+}
+public class F {
+    public static void main(String[] args) {
+        Manager m = new Manager();
+        m.displayEmployee();
+        m.displayManager();
+        m.doWork();
+        m.generateReport();
+    }
+}
