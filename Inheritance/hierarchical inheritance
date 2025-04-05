@@ -1,0 +1,67 @@
+class HospitalMember {
+    String name;
+
+    HospitalMember(String name) {
+        this.name = name;
+    }
+
+    void login() {
+        System.out.println(name + " logged into the system.");
+    }
+}
+
+
+class Doctor extends HospitalMember {
+    Doctor(String name) {
+        super(name);
+    }
+
+    void diagnose() {
+        System.out.println(name + " is diagnosing a patient.");
+    }
+}
+
+
+class Nurse extends HospitalMember {
+    Nurse(String name) {
+        super(name);
+    }
+
+    void assist() {
+        System.out.println(name + " is assisting in surgery.");
+    }
+}
+
+
+class Patient extends HospitalMember {
+    Patient(String name) {
+        super(name);
+    }
+
+    void takeMedicine() {
+        System.out.println(name + " is taking prescribed medicine.");
+    }
+}
+
+
+public class Employee {
+    public static void main(String[] args) {
+      
+        Doctor doc = new Doctor("Dr. Ramesh");
+        Nurse nurse = new Nurse("Nurse Mary");
+        Patient patient = new Patient("John Doe");
+
+        
+        System.out.println("--- Doctor Actions ---");
+        doc.login();
+        doc.diagnose();
+
+        System.out.println("\n--- Nurse Actions ---");
+        nurse.login();
+        nurse.assist();
+
+        System.out.println("\n--- Patient Actions ---");
+        patient.login();
+        patient.takeMedicine();
+    }
+}     
