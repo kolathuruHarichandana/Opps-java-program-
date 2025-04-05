@@ -1,0 +1,32 @@
+class Company {
+    String companyName = "GoRide";
+    String supportContact = "1800-123-456";
+    void showCompany() {
+        System.out.println("Cab Company: " + companyName);
+        System.out.println("Support: " + supportContact);
+    }
+}
+class Cab extends Company {
+    String cabType = "Sedan";
+    String cabNumber = "MH12 AB 6789";
+    void showCab() {
+        System.out.println("Cab Type: " + cabType);
+        System.out.println("Cab Number: " + cabNumber);
+    }
+}
+class Driver extends Cab {
+    String driverName = "Sunil Pawar";
+    int experienceYears = 5;
+    void showDriver() {
+        System.out.println("Driver Name: " + driverName);
+        System.out.println("Experience: " + experienceYears + " years");
+    }
+}
+public class F {
+    public static void main(String[] args) {
+        Driver d = new Driver();
+        d.showCompany();
+        d.showCab();
+        d.showDriver();
+    }
+}
